@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assigment 2</title>
+    <style>
+        .box {
+            width: 600px;
+            height: 480px;
+            background-color: #050210;
+            margin-left: auto;
+            margin-right: auto;
+        }
+       /* @keyframes move {
+                0% {
+                    transform: rotate(0deg);
+                } 
+                100% {
+                    transform: rotate(360deg);
+                }
+            }
+            @keyframes resize {
+                @keyframes move {
+                0% {
+                    transform: rotate(0deg);
+                } 
+                100% {
+                    transform: rotate(360deg);
+                }
+                
+            }*/
+        
+            .circle {
+                        background: linear-gradient(#fb5dad, #55fb9f, #b97aff);
+                        width: 300px;
+                        height: 300px;
+                        display: block;
+                        border-radius: 50%;
+                        position: absolute;
+                        margin-bottom: 80px;
+                        margin-top: 80px;
+                        margin-left: 150px;
+                        filter: opacity(40%);
+                        animation-name: move;   
+                        animation-iteration-count: 1; 
+                        animation-duration: 1s;
+                        transition-timing-function: linear;
+                        transform: translate(-160px) ; 
+            }
+            little-circle::after {
+                background-color: black ;
+                position: absolute;
+                width: 255px;
+                height: 255px;
+                display: block;
+                border-radius: 50%;
+                margin-top: 20px;
+                margin-bottom: 20px;
+                margin-left: 20px;
+                transform-origin: 0px 0px;
+
+            }
+          /* .small-circle {
+                background-color: rgb(36, 36, 36) ;
+                position: absolute;
+                width: 10px;
+                height: 10px;
+                bottom: 60px;
+                top: 60px;
+                filter: opacity(80%);
+                border-radius: 50%;
+                transform-origin: 0px 0px;
+                animation-name: resize;  
+                animation-iteration-count: infinite;
+                animation-duration: 1s;
+                transition-timing-function: linear;
+                
+            }
+           */
+    </style>
+</head>
+<body>
+        <div id = "div-1" class= "box">
+            <div id = "div-2" class= "circle">
+                <div id="div-3" class= "little-circle">
+                </div>
+            </div>
+        </div>
+</body>
+</html>
